@@ -1,38 +1,99 @@
-.App {
+/* src/app.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+h2 {
+  color: #333;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+input , select{
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.d-flex{
+  display: flex;
+  margin-top:12px;
+  font-size:13px;
+}
+.cursor-pointer{
+  cursor:pointer;
+}
+.pb{
+  padding-bottom: 12px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.App{
+  display: flex;
+width:100%;
+  height:100vh;
+}
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  width:100%;
+}
+table{
+  width:100%;
+  margin:20px;
+}
+thead, tbody {
+  display: block; 
+}
+tbody {
+  display: block;
+  height: 200px; 
+  overflow-y: auto; 
+  width: 100%; 
+}
+thead {
+  background-color: #f2f2f2;
+  display: table;
+  width: 100%;
+  table-layout: fixed; 
 }
 
-.App-link {
-  color: #61dafb;
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th{
+  text-align: left;
 }
